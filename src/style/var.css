@@ -1,0 +1,9 @@
+:root {
+  color-scheme: dark;
+  --hue: 213;
+  --saturation: 100%;
+  --lightness: 6%;
+  --background: hsl(var(--hue), var(--saturation), var(--lightness));
+  --shadow: rgba(100, 100, 100, 0.2);
+  --content-padding: 3rem;
+}
