@@ -1,5 +1,12 @@
+import Players from './players'
+import styles from './style.module.css'
+
 const App = (): JSX.Element => {
-  return <div>App</div>
+  return (
+    <div className={styles.app}>
+      <Players />
+    </div>
+  )
 }
 
 export default App
