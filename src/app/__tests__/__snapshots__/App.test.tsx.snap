@@ -2,8 +2,71 @@
 
 exports[`App renders properly 1`] = `
 <div>
-  <div>
-    App
+  <div
+    class="app"
+  >
+    <div
+      class="players"
+    >
+      <div
+        class="add-player"
+      >
+        <div
+          class="input-container"
+        >
+          <input
+            placeholder="Add player"
+            type="text"
+            value=""
+          />
+        </div>
+        <button
+          class="submit"
+        >
+          +
+        </button>
+      </div>
+      <div
+        class="player-list"
+      >
+        <div
+          class="no-players"
+        >
+          <svg
+            fill="none"
+            height="40"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="40"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+              stroke="none"
+            />
+            <path
+              d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+            />
+            <path
+              d="M9 10l.01 0"
+            />
+            <path
+              d="M15 10l.01 0"
+            />
+            <path
+              d="M9.5 15.25a3.5 3.5 0 0 1 5 0"
+            />
+          </svg>
+          <p>
+            No players... yet.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
