@@ -1,0 +1,110 @@
+.players {
+  width: 350px;
+  overflow: hidden;
+  border-radius: 7px;
+  border: 1px solid hsl(var(--hue), var(--saturation), 45%);
+}
+
+.add-player {
+  display: flex;
+  justify-content: space-between;
+  background: hsl(var(--hue), var(--saturation), 9%);
+  border-bottom: 1px solid hsl(var(--hue), var(--saturation), 45%);
+}
+
+.submit {
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  background: hsl(var(--hue), var(--saturation), 15%);
+  padding: 0.4rem 0.8rem;
+}
+
+.submit:hover {
+  background: hsl(var(--hue), var(--saturation), 18%);
+}
+
+.input-container {
+  flex: 1;
+  padding: 0.6rem;
+}
+
+.input-container input {
+  width: 100%;
+  border: none;
+  background: inherit;
+  font-size: 18px;
+}
+
+.input-container input:focus {
+  outline: 0;
+}
+
+.player {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(var(--hue), var(--saturation), 10%);
+}
+
+.player:last-child {
+  border-bottom: none;
+}
+
+.player > * {
+  padding: 0.6rem;
+}
+
+.active {
+  background: hsl(var(--hue), var(--saturation), 10%);
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  min-width: 40px;
+  background: hsl(var(--hue), var(--saturation), 15%);
+  font-size: 24px;
+}
+
+.name {
+  flex: 1;
+  font-weight: 300;
+  word-wrap: break-word;
+  font-size: 24px;
+}
+
+.score-control {
+  display: flex;
+  padding: 0;
+}
+
+.score-control button {
+  display: inline;
+  padding: 0.4rem 0.8rem;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  background: inherit;
+  font-size: 18px;
+}
+
+.score-control button:hover {
+  color: #bbb;
+}
+
+.no-players {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 0.5rem;
+  color: hsl(var(--hue), 100%, 45%);
+}
+
+.no-players p {
+  margin: 0;
+  font-size: 24px;
+}
