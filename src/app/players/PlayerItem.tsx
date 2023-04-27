@@ -5,27 +5,30 @@ import { type Player } from './Players'
 interface IPlayerItem {
   player: Player
   isActive: boolean
-  onClick: (toSubract: boolean) => any
+  onClick: () => any
+  onControlClick: (toSubract: boolean) => any
 }
 
 const PlayerItem: FunctionComponent<IPlayerItem> = ({
   player: { name, score },
   isActive,
   onClick,
+  onControlClick,
 }) => (
-  <div className={[styles.player, isActive ? styles.active : ''].join(' ')}>
+  <div
+    tabIndex={0}
+    className={[styles.player, isActive ? styles.active : ''].join(' ')}
+    onClick={onClick}
+    role="button"
+    onKeyDown={onClick}
+  >
     <div className={styles.score}>{score}</div>
     <div className={styles.name}>{name}</div>
     <div className={styles['score-control']}>
-      <button
-        onClick={() => {
-          onClick(true)
-        }}
-        className={styles.subtract}
-      >
+      <button onClick={() => onControlClick(true)} className={styles.subtract}>
         -
       </button>
-      <button onClick={() => onClick(false)} className={styles.add}>
+      <button onClick={() => onControlClick(false)} className={styles.add}>
         +
       </button>
     </div>

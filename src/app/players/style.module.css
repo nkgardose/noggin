@@ -56,6 +56,15 @@
   justify-content: space-between;
   width: 100%;
   border-bottom: 1px solid hsl(var(--hue), var(--saturation), 10%);
+  cursor: pointer;
+}
+
+.player:hover {
+  background: hsl(var(--hue), var(--saturation), 8%);
+}
+
+.active {
+  background: hsl(var(--hue), var(--saturation), 10%) !important;
 }
 
 .player:last-child {
@@ -64,10 +73,6 @@
 
 .player > * {
   padding: 0.6rem;
-}
-
-.active {
-  background: hsl(var(--hue), var(--saturation), 10%);
 }
 
 .score {

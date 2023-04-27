@@ -135,8 +135,11 @@ const Players = (): JSX.Element => {
           players.map((player, i) => (
             <PlayerItem
               isActive={highlightedPlayer === i}
-              onClick={(toSubract) => {
-                handleClick(toSubract, i)
+              onControlClick={(toSubtract) => {
+                handleClick(toSubtract, i)
+              }}
+              onClick={() => {
+                setHighlightedPlayer(i)
               }}
               key={player.name}
               player={player}
